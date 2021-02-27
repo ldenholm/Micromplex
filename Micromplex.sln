@@ -13,9 +13,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.IoC", "Infra.IoC", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{658D31CF-FC3E-42BF-B8FA-06E48848E21B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micromplex.Domain.Core", "Micromplex.Domain.Core\Micromplex.Domain.Core.csproj", "{821536CE-99DB-4E05-B719-787D0ECBFCCE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{821536CE-99DB-4E05-B719-787D0ECBFCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821536CE-99DB-4E05-B719-787D0ECBFCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821536CE-99DB-4E05-B719-787D0ECBFCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821536CE-99DB-4E05-B719-787D0ECBFCCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{821536CE-99DB-4E05-B719-787D0ECBFCCE} = {A4B0594A-C49D-4CAA-B639-E600363032DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3AB58D36-3B11-42AE-92D9-FB50EBE531D0}
