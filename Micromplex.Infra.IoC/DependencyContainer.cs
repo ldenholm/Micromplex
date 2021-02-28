@@ -3,6 +3,8 @@ using Micromplex.Banking.Application.Interfaces;
 using Micromplex.Banking.Application.Services;
 using Micromplex.Banking.Data.Context;
 using Micromplex.Banking.Data.Repository;
+using Micromplex.Banking.Domain.CommandHandlers;
+using Micromplex.Banking.Domain.Commands;
 using Micromplex.Banking.Domain.Interfaces;
 using Micromplex.Domain.Core.Bus;
 using Micromplex.Infrastructure.Bus;
@@ -22,6 +24,9 @@ namespace Micromplex.Infra.IoC
 
             // Domain Bus
             services.AddTransient<IEventBus, RabbitMQBus>();
+
+            // Domain Banking Commands
+            services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
 
             // Application Layer (Services)
             services.AddTransient<IAccountService, AccountService>();
