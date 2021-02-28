@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Micromplex.Domain.Core\Micromplex.Domain.Core.csproj" />
+    <ProjectReference Include="..\Micromplex.Infrastructure.Bus\Micromplex.Infrastructure.Bus.csproj" />
+  </ItemGroup>
+
 </Project>

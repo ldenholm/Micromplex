@@ -13,13 +13,13 @@ using System.Threading.Tasks;
 
 namespace Micromplex.Infrastructure.Bus
 {
-    public sealed class MicromplexBus : IEventBus
+    public sealed class RabbitMQBus : IEventBus
     {
         private readonly IMediator _mediator;
         private readonly Dictionary<string, List<Type>> _handlers;
         private readonly List<Type> _eventTypes;
 
-        public MicromplexBus(IMediator mediator)
+        public RabbitMQBus(IMediator mediator)
         {
             _mediator = mediator;
             _handlers = new Dictionary<string, List<Type>>();
