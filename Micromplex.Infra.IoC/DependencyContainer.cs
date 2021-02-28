@@ -1,4 +1,10 @@
-﻿using Micromplex.Domain.Core.Bus;
+﻿using MediatR;
+using Micromplex.Banking.Application.Interfaces;
+using Micromplex.Banking.Application.Services;
+using Micromplex.Banking.Data.Context;
+using Micromplex.Banking.Data.Repository;
+using Micromplex.Banking.Domain.Interfaces;
+using Micromplex.Domain.Core.Bus;
 using Micromplex.Infrastructure.Bus;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -13,8 +19,16 @@ namespace Micromplex.Infra.IoC
         {
             // Bind interfaces with their concrete types
 
+
             // Domain Bus
             services.AddTransient<IEventBus, RabbitMQBus>();
+
+            // Application Layer (Services)
+            services.AddTransient<IAccountService, AccountService>();
+
+            // Data Layer
+            services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient<BankingDbContext>();
         }
     }
 }

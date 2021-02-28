@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Micromplex.Banking.Domain\Micromplex.Banking.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

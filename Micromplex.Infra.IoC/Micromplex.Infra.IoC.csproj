@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Micromplex.Banking.Application\Micromplex.Banking.Application.csproj" />
+    <ProjectReference Include="..\Micromplex.Banking.Data\Micromplex.Banking.Data.csproj" />
+    <ProjectReference Include="..\Micromplex.Banking.Domain\Micromplex.Banking.Domain.csproj" />
     <ProjectReference Include="..\Micromplex.Domain.Core\Micromplex.Domain.Core.csproj" />
     <ProjectReference Include="..\Micromplex.Infrastructure.Bus\Micromplex.Infrastructure.Bus.csproj" />
   </ItemGroup>
