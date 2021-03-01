@@ -29,8 +29,8 @@ namespace Micromplex.Banking.Application.Services
         public void Transfer(AccountTransfer accountTransfer)
         {
             var createTransferCommand = new CreateTransferCommand(
-                accountTransfer.Source,
-                accountTransfer.Target,
+                accountTransfer.From,
+                accountTransfer.To,
                 accountTransfer.Amount
                 );
 

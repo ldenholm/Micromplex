@@ -5,9 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Micromplex.Infrastructure.Bus\Micromplex.Infrastructure.Bus.csproj" />
+    <ProjectReference Include="..\Micromplex.Transfer.Domain\Micromplex.Transfer.Domain.csproj" />
   </ItemGroup>
 
 </Project>
